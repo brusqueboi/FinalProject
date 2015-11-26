@@ -52,7 +52,7 @@ div#rheader, rheader{
   transition: all .8s ease-in-out;
 }
 .panel:target{
-  margin-top: 5%;
+  margin-top: 0%;
   background-color: steelblue;
 }
 .content{

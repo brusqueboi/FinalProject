@@ -19,3 +19,15 @@ div#section, section{
 div#aside, aside{
   padding-left: 13%;
 }
+
+div#bod, bod{
+  width: 75%;
+  margin: auto;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+div#dropdown, dropdown{
+  padding-left: 13%;
+}

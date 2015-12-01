@@ -1,0 +1,269 @@
+<header>
+  <h1 style="color: black">D & C FoodPorn Adventures</h1>
+</header>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#guest">Guest</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="main.html">Home</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Drop down user log in -->
+<div style="padding-left: 2.5%">
+  <div id="guest" class="panel">
+    <div class="content">
+     <p>Please sign in</p>
+    </div>
+  </div>
+</div>
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-6">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-6">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-6">
+      <button type="submit" formaction="" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap.min.js"></script>
+
+/*******************************************************
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#guest">Guest</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="main.html">Home</a></li>
+        <li><a href="Recipes.html">Recipes</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Drop down user log in -->
+<div style="padding-left: 4%"> <!-- 2.5% -->
+  <div id="guest" class="panel">
+    <div class="content">
+
+      <!-- TESTING -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 class="text-center login-title">Sign in:</h1>
+            <div class="account-wall">
+              <!--
+              <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                   alt="">
+              -->
+              <form class="form-signin">
+                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                  Sign in</button>
+                <label class="checkbox pull-left">
+                  <input type="checkbox" value="remember-me">
+                  Remember me
+                </label>
+
+                <!--
+                <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                -->
+              </form>
+            </div>
+            <a href="#" class="text-center new-account">Create an account </a>
+          </div>
+        </div>
+      </div>
+      <!-- TESTING -->
+
+
+    </div>
+  </div>
+</div>
+
+<!--
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-6">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-6">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-6">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+-->
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-6">
+      <button type="submit" formaction="" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap.min.js"></script>
+
+
+
+
+/**************************** STYLES.CSS PAGE CONTENT *************************************/
+
+div#nav, nav{
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+div#body, body{
+  width: 100%;
+}
+div#section, section{
+  width: 100%;
+  display: inline-flex;
+}
+div#aside, aside{
+  padding-left: 13%;
+}
+
+div#bod, bod{
+  width: 75%;
+  margin: auto;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+div#rheader, rheader{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+.panel{
+  min-width: 25%;
+  height: 25%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: -150%;
+  position: absolute;
+  background: #000;
+  box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+  z-index: 2;
+  -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+.panel:target{
+  margin-top: 0%;
+  background-color: steelblue;
+}
+.content{
+  /*
+  right: 40px;
+  left: 280px;
+  top: 0px;
+  */
+  position: absolute;
+  padding-bottom: 30px;
+}
+.content h2{
+  font-size: 110px;
+  margin-top: 52px;
+
+  padding: 10px 0px 20px 0px;
+  color: #fff;
+
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.content p{
+  font-size: 18px;
+  padding: 10px;
+  line-height: 24px;
+  color: #fff;
+  display: inline-block;
+  /*background: black;*/
+  padding: 10px;
+  margin: 3px 0px;
+}
+
+
+
+/*** LOCATED IN MAIN MENU LEFT SIDE BAR
+div#header, header{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 17px;
+  text-align: justify;
+}
+***/

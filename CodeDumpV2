@@ -1,0 +1,349 @@
+/**** IN HEAD ****/
+  <!-- TESTING --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .navList{
+            margin: 20px;
+        }
+    </style>
+
+
+/****** IN BODY ******/
+<div id="canvas">
+    <div id="mobileNav" class=""></div>
+    <div id="mobileMenuLink"></div>
+    <header id="header">
+        <div id="logo" data-content-field="site-title">
+            <h1 class="logo" data-shrink-original-size="46" style="letter-spacing: 0.0217391em;">
+                <a href="http://localhost:63342/FinalProject/main.html">
+
+                    D & C Foodporn Adventures
+
+                </a>
+            </h1>
+            <div class="logo-subtitle" data-shrink-original-size="12" style="letter-spacing: 0.0833333em;">
+
+                "OM NOM NOM NOM NOM NOM NOM NOM FOOD!"
+
+            </div>
+        </div>
+
+        <div class="navList">
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Recipes<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">Jacob's List</li>
+                    <li><a href="http://localhost:63342/FinalProject/Recipes.html">Chicken Katsu</a></li>
+                    <li><a href="#">Loco Moco</a></li>
+                    <li class="dropdown-header">Jun's List</li>
+                    <li><a href="#">Spam Musubi</a></li>
+                    <li><a href="#">Hamburger Steak</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">History<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">About Us</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">About this site</a></li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default">Blog</button>
+            </div>
+
+            <div class="btn-group">
+                <!--
+                <a id="navLogin" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                -->
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Login<span class="caret"></span></button>
+                <!--
+                </a>
+                -->
+                <div class="dropdown-menu" style="padding:30px;">
+
+                    <form id="formLogin" class="form">
+
+                        <label>
+
+                            Login
+
+                        </label>
+                        <input id="token" type="hidden" value="ZVQ5YQ78-8cjmL-tXw9h2bFaakwCbDfb6C5I" name="_csrf"></input>
+                        <input id="username" type="text" required="" title="Enter your username" data-valid-min="6" pattern="^[a-z,A-Z,0-9,_]{6,15}$" placeholder="Username" name="username"></input>
+                        <input id="password" type="password" required="" title="Enter your password" placeholder="Password" name="password"></input>
+                        <br></br>
+                        <button id="btnLogin" class="btn" type="button">
+
+                            Login
+
+                        </button>
+
+                    </form>
+                    <form>
+
+                        <a id="btnNewUser" data-target="#formRegister" data-toggle="collapse" title="Fast and free sign up!" href="#">
+
+                            New User? Sign-up..
+
+                        </a>
+
+                    </form>
+                    <form id="formRegister" class="form collapse">
+
+                        <input id="token" type="hidden" value="ZVQ5YQ78-8cjmL-tXw9h2bFaakwCbDfb6C5I" name="_csrf"></input>
+                        <input id="inputEmail" type="email" required="" placeholder="Email" name="email"></input>
+                        <input id="inputUsername" type="text" required="" title="Choose a username" data-valid-min="6" pattern="^[a-z,A-Z,0-9,_]{6,15}$" placeholder="Username" name="username"></input>
+                        <br></br>
+                        <input id="inputpassword" type="password" required="" placeholder="Password" name="password"></input>
+                        <input id="inputVerify" type="password" required="" placeholder="Password (again)" name="verify"></input>
+                        <br></br>
+                        <button id="btnRegister" class="btn" type="button">
+
+                            Sign Up
+
+                        </button>
+
+                    </form>
+                    <a href="#forgotPasswordModal" role="button" data-toggle="modal">
+
+                        Forgot username or password?
+
+                    </a>
+                    <a href="#contactModal" role="button" data-toggle="modal">
+
+                        <small>
+
+                            Need help? Contact us
+
+                        </small>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="page-divider"></div>
+</div>
+
+/***** CSS FILES *****/
+body #canvas {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#canvas {
+  max-width: 1100px; /** 1020 **/
+  margin: 0px auto;
+  padding: 45px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+#logo, #topNav {
+  float: left;
+}
+
+.logo-subtitle {
+  font-family: "proxima-nova";
+  font-size: 12px;
+  line-height: 1em;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+  color: #2E0200;
+  margin-top: 0.7em;
+  width: 100%;
+}
+
+.layout-style-left #topNav {
+  float: right;
+}
+
+#topNav {
+  position: relative;
+  z-index: 890;
+}
+
+#topNav nav li {
+  float: left;
+  position: relative;
+  margin-right: 35px;
+}
+
+#topNav ul, #topNav li {
+  text-decoration: none !important;
+}
+
+.page-divider {
+  border-bottom: 1px solid #DDD;
+}
+
+.dropdown-menu, .navbar .nav > li > .dropdown-menu.pull-right {
+  left: auto;
+  right: 0px;
+}
+
+form {
+  margin: 0px 0px 20px;
+}
+
+input, textarea, .uneditable-input {
+  margin-left: 0px;
+}
+input, textarea, .uneditable-input {
+  margin-left: 0px;
+}
+input, textarea, .uneditable-input {
+  width: 206px;
+}
+input, button, select, textarea {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+label, input, button, select, textarea {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+button, input {
+  line-height: normal;
+}
+button, input, select, textarea {
+  margin: 0px;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.navbar .btn {
+  background-color: #535368;
+  background-image: none;
+  border-color: transparent;
+  color: #E6E6E6;
+  text-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+}
+
+a {
+  color: #08C;
+  text-decoration: none;
+}
+
+.collapse {
+  position: relative;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.35s ease 0s;
+}
+/****************************/
+div#nav, nav{
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+div#header, header{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+div#body, body{
+  width: 100%;
+}
+div#section, section{
+  width: 100%;
+  display: inline-flex;
+}
+div#aside, aside{
+  padding-left: 13%;
+}
+
+div#bod, bod{
+  width: 75%;
+  margin: auto;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+div#rheader, rheader{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  width: 75%;
+}
+
+.panel{
+  min-width: 25%;
+  height: 25%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: -150%;
+  position: absolute;
+  background: #000;
+  box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+  z-index: 2;
+  -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -o-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+.panel:target{
+  margin-top: 0%;
+  background-color: steelblue;
+}
+.content{
+  /*
+  right: 40px;
+  left: 280px;
+  top: 0px;
+  */
+  position: absolute;
+  padding-bottom: 30px;
+}
+.content h2{
+  font-size: 110px;
+  margin-top: 52px;
+  /*
+  padding: 10px 0px 20px 0px;
+  color: #fff;
+  */
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+.content p{
+  font-size: 18px;
+  padding: 10px;
+  line-height: 24px;
+  color: #fff;
+  display: inline-block;
+  /*background: black;*/
+  padding: 10px;
+  margin: 3px 0px;
+}
